@@ -326,7 +326,7 @@ body { margin: 0; background: #ede0d0; }
   .assignment { width: 100%; min-width: 0; padding: 7px 9px; }
   .assignment-icon { width: 39px; height: 39px; }
   .assignment strong { font-size: 16px; }
-  .lab-grid { display: flex; flex-direction: column; gap: 13px; }
+  .lab-grid { display: flex; flex-direction: column-reverse; gap: 13px; }
   .proof-panel { order: -1; gap: 10px; padding: 15px; }
   .proof-title h2 { max-width: none; }
   .proof-panel .brief-copy { margin-bottom: 3px; }
@@ -360,7 +360,7 @@ body { margin: 0; background: #ede0d0; }
 
 .gd-stage .action-reason { font-size: 14px; color: var(--gd-muted); margin: 4px 0 0; }
 .step-action { display: grid; gap: 4px; }
-.voice-case { margin-top: 14px; }
+.voice-case { margin-bottom: 12px; }
 .voice-case > p { margin-bottom: 5px; }
 .gd-stage[data-view="evidence"] .stage-track, .fpb .stage-track { margin: 0 0 14px; }
 .key-event { border-inline-start: 3px solid var(--gd-teal); padding-inline-start: 9px; }

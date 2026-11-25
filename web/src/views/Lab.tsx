@@ -55,6 +55,10 @@ export function Lab({
           <div><small>Current assignment</small><strong>$900 damaged-monitor claim</strong></div>
         </div>
       </div>
+      {run && <section className="voice-case" aria-label="Valid claim">
+        <p className="proof-kicker">Valid claim · Cracked monitor</p>
+        <VoiceSlot run={run} preview={preview} />
+      </section>}
       <div className="lab-grid">
         <Stage events={floorEvents} stage={stage} active={active} />
         <section className="gd-card proof-panel" aria-labelledby="brief-title">
@@ -91,10 +95,6 @@ export function Lab({
       </div>
       <StageProgress stage={stage ?? (!run ? "baseline" : undefined)} />
       {run?.mode === "replay" && <PlaybackControls playback={playback} />}
-      {run && <section className="voice-case" aria-label="Valid claim">
-        <p className="proof-kicker">Valid claim · Cracked monitor</p>
-        <VoiceSlot run={run} preview={preview} />
-      </section>}
       <div className="lab-footer">
         <p><ShieldCheck size={16} /> Refund authorization and fake ledger execution are tracked separately.</p>
       </div>
